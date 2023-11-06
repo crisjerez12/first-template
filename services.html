@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Tailwind starter</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body class="bg-slate-900">
+    <header>
+      <div class="container max-w-6xl mx-auto flex justify-between py-4 px-4">
+        <div class="text-3xl text-left text-white font-bold font-serif z-40">
+          <a href="index.html">Logo</a>
+        </div>
+        <nav>
+          <ul
+            class="md:flex hidden justify-between uppercase text-white space-x-5 md:text-xl"
+          >
+            <li class="hover:text-yellow-400 cursor-pointer">
+              <a href="services.html">Services</a>
+            </li>
+            <li class="hover:text-yellow-400 cursor-pointer">
+              <a href="products.html">Products</a>
+            </li>
+            <li class="hover:text-yellow-400 cursor-pointer">
+              <a href="teams.html">Teams</a>
+            </li>
+            <li class="hover:text-yellow-400 cursor-pointer">
+              <a href="about.html">About</a>
+            </li>
+          </ul>
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              type="button"
+              class="z-40 block hamburger md:hidden outline-none duration-200"
+            >
+              <span class="hamburger-top"></span
+              ><span class="hamburger-middle"></span
+              ><span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </nav>
+        <div
+          id="menu"
+          class="absolute top-0 bottom-0 left-0 flex-col hidden self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black md:hidden opacity-95"
+        >
+          <a href="services.html" class="hover:text-yellow-700">SERVICES</a>
+          <a href="products.html" class="hover:text-yellow-700">PRODUCTS</a>
+          <a href="teams.html" class="hover:text-yellow-700">TEAMS</a>
+          <a href="about.html" class="hover:text-yellow-700">ABOUT</a>
+        </div>
+      </div>
+    </header>
+    <main id="services">
+      <div class="container max-w-6xl mx-auto mt-10">
+        <h1 class="text-left text-2xl font-serif text-white ml-4">
+          Your Storename here
+        </h1>
+        <hr class="mx-4 mt-2" />
+        <div
+          class="flex md:flex-row justify-between px-10 md:px-32 mt-10 items-center md:space-x-10 flex-col-reverse"
+        >
+          <div
+            class="flex flex-col text-white text-lg space-y-3 md:space-y-10 items-center"
+          >
+            <p
+              class="text-white text-lg text-center mt-5 md:mt-0 md:text-xl md:text-left"
+            >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Assumenda non cum facere id accusantium laboriosam saepe nesciunt
+              expedita commodi ipsa sed quidem eos eaque, fugit repudiandae
+              accusamus, minus laborum recusandae deserunt quisquam doloribus
+              sapiente obcaecati quae. Illum incidunt consequatur soluta.
+            </p>
+            <h5 class="text-white text-xl text-center md:text-left md:text-2xl">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, reprehenderit?
+            </h5>
+          </div>
+          <div class="flex space-x-5 md:space-x-0 md:flex-col md:space-y-5">
+            <div class="shadow-lg w-52 md:w-72">
+              <img src="images/store-pic.avif" alt="" />
+            </div>
+            <div class="shadow-lg w-52 md:w-72">
+              <img src="images/store-pic.avif" alt="" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex justify-between space-x-5 md:space-x-10 px-10 md:px-32 mt-10 items-center flex-col md:flex-row"
+        >
+          <div class="flex md:flex-col space-x-5 md:space-x-0 md:space-y-5">
+            <div class="shadow-lg w-52 md:w-72">
+              <img src="images/store-pic.avif" alt="" />
+            </div>
+            <div class="shadow-lg w-52 md:w-72">
+              <img src="images/store-pic.avif" alt="" />
+            </div>
+          </div>
+          <div
+            class="flex flex-col text-white text-lg space-y-5 md:space-y-10 items-center"
+          >
+            <p
+              class="text-white text-lg md:text-xl text-center md:text-left mt-5 md:mt-0"
+            >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Assumenda non cum facere id accusantium laboriosam saepe nesciunt
+              expedita commodi ipsa sed quidem eos eaque, fugit repudiandae
+              accusamus, minus laborum recusandae deserunt quisquam doloribus
+              sapiente obcaecati quae. Illum incidunt consequatur soluta.
+            </p>
+            <h5 class="text-white text-center md:text-left text-xl md:text-2xl">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, reprehenderit?
+            </h5>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-slate-950">
+      <div class="container max-w-6xl py-10 mx-auto mt-10">
+        <!-- Footeer Flex -->
+        <div
+          class="flex flex-col items-center mb-8 space-y-6 md:flex-row md:space-y-0 md:justify-between md:items-start"
+        >
+          <div
+            class="flex flex-col items-center space-y-8 md:items-start md:space-y-4"
+          >
+            <div class="h-8">
+              <img src="images/logo.svg" alt="" class="w-44 md:ml-3" />
+            </div>
+            <nav>
+              <ul
+                class="flex flex-col items-center space-y-4 text-white md:flex-row md:space-y-0 md:space-x-6 md:ml-3 uppercase text-xl"
+              >
+                <li class="hover:text-yellow-400 cursor-pointer">
+                  <a href="services.html">Services</a>
+                </li>
+                <li class="hover:text-yellow-400 cursor-pointer">
+                  <a href="products.html">Products</a>
+                </li>
+                <li class="hover:text-yellow-400 cursor-pointer">
+                  <a href="teams.html">Teams</a>
+                </li>
+                <li class="hover:text-yellow-400 cursor-pointer">
+                  <a href="about.html">About</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div
+            class="flex flex-col items-start justify-between space-y-4 text-gray-500"
+          >
+            <!-- icons Container -->
+            <div
+              class="flex items-center justify-center mx-auto space-x-4 md:justify-end md:mx-0"
+            >
+              <div class="h-8 group">
+                <a href="#">
+                  <img src="images/icon-facebook.svg" class="h-6" alt="" />
+                </a>
+              </div>
+              <div class="h-8 group">
+                <a href="#">
+                  <img src="images/icon-twitter.svg" class="h-6" alt="" />
+                </a>
+              </div>
+              <div class="h-8 group">
+                <a href="#">
+                  <img src="images/icon-pinterest.svg" class="h-6" alt="" />
+                </a>
+              </div>
+              <div class="h-8 group">
+                <a href="#">
+                  <img src="images/icon-instagram.svg" class="h-6" alt="" />
+                </a>
+              </div>
+            </div>
+            <!-- Copy -->
+            <div class="font-bold">
+              &copy; 2023 SampleStore. All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
